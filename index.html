@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generater</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="contain-cv" id="view">
+
+        <div class="header">
+            <h1>Resume Generater</h1>
+        </div>
+
+        <div class="container">
+            <div class="main">
+                <div class="child1">
+                    <form action="D:\cv Generater\Resume Generater\resume.html" onsubmit="submitFunction()">
+                        <fieldset class="field">
+                            <legend class="info">Personal Information</legend>
+                            <label for="">Name</label><br>
+                            <input id="fill" class="fill" type="text"><br><br>
+                            <label for="">Email</label><br>
+                            <input id="Emailinput" class="fill" type="email"><br><br>
+                            <label for="">Age</label><br>
+                            <input id="Ageinput" class="fill" type="number" max="100"><br><br>
+                            <label for="">Phone</label><br>
+                            <input id="Phoneinput" class="fill" type="tel" min="1" max="11"><br><br>
+                            <label for="">Link</label><br>
+                            <input id="Linkinput" class="fill" type="url"><br><br>
+
+                        </fieldset>
+
+
+
+                        <br><br>
+
+                        <fieldset class="field" id="sl">
+                            <legend class="info">Skills</legend>
+                            <label for="">Add your Skills</label><br>
+                            <input id="honorinput" class="skill" type="text"><br><br>
+
+                            <div onclick="addNewskill()" id="addskill">
+                                <button>Add</button>
+                            </div>
+
+                        </fieldset>
+
+
+                        <br><br><br><br><br><br>
+
+                        <fieldset class="field" id="lan">
+                            <legend class="info">Language</legend>
+                            <label for="">Tell us your Language you can speak </label><br><br>
+                            <input class="educate" type="text"><br><br>
+
+                            <div onclick="addNewlang()" id="addlang">
+                                <button>Add</button>
+                            </div>
+                        </fieldset>
+
+
+
+                        <br><br><br><br>
+
+                        <fieldset class="field">
+                            <legend class="info">Profile Photo</legend>
+                            <label for="" class="pics">Upload pic </label><br><br>
+                            <input id="imgupload" type="file" class="fillpic">
+
+
+
+                        </fieldset>
+
+
+
+
+
+
+                </div>
+                <div class="child2">
+
+
+                    <fieldset class="field" id="we">
+                        <legend class="info">Education</legend>
+                        <label for="">Education Details</label><br><br>
+                        <textarea class="textarea" type="text" class="textfeild"></textarea><br><br>
+
+                        <div onclick="addNewEd()" id="addbtn">
+                            <button>Add</button>
+                        </div>
+                    </fieldset>
+
+
+
+
+
+
+
+
+
+
+                    <br><br><br><br><br><br>
+
+                    <fieldset class="field" id="Ab">
+                        <legend class="info">About Me</legend>
+                        <label for="">Tell us about yourself </label><br><br>
+                        <textarea class="textarea1" type="text"></textarea><br><br>
+
+                        <div onclick="addNewAb()" id="addbtn2">
+                            <button>Add</button>
+                        </div>
+
+
+                    </fieldset>
+                    <br><br><br><br><br><br>
+
+                    <fieldset class="field">
+                        <legend class="info">Work Expereince</legend>
+                        <label for="">Company Name </label><br><br>
+                        <input id="CompanyNameinput" class="work" type="text"><br><br>
+                        <label for="">Position </label><br><br>
+                        <input id="positioninput" class="work" type="text"><br><br>
+                        <label for="">Duration </label><br><br>
+                        <input id="durationinput" class="work" type="text"><br><br>
+                        <label for="">Job Description </label><br><br>
+                        <input id="jobinput" class="work1" type="text"><br><br>
+
+
+                    </fieldset>
+
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="generete">
+            <button id="boton" onclick="generatecv()" class="btn">Generete Resume</button></a>
+        </div>
+
+    </div>
+    <!-- <h2 id="output">Name:</h2>
+    <br /><br>
+    <input type="button" value="click me" id="buton"> -->
+
+
+
+
+
+    <!-- Resume tempalete -->
+
+
+    <br><br>
+
+
+
+
+
+    <!-- <div class="head1">
+        <h1>Static Resume</h1>
+    </div> -->
+
+    <div id="temp">
+        <div class="mainT">
+            <div class="container1T">
+                <div class="containerT">
+                    <div class="image">
+                        <img id="PhotoT" src="WhatsApp Image 2024-09-01 at 23.35.48_ab100a44.jpg" alt="" width="100%">
+                    </div>
+                    <div class="name">
+                        <h1 id="namet">Hammad Abbasi</h1>
+                    </div>
+
+
+                    <div class="personalinformation">
+                        <h3>Personal Information</h3>
+                        <p>Age: <span id="AgeT">21</span></p>
+                        <p>Contact:<span id="PhoneT">00000000000000</span></p>
+                        <p>Email: <span id="EmailT">hammad@gmail.com</span></p>
+                        <p>Link: <span id="LinkT">www.google.com</span></p>
+
+                    </div>
+
+
+
+
+                    <div class="personalinformation">
+                        <i class="ri-subtract-fill" id="lang"></i>
+                        <h3>LANGUAGES</h3>
+                        <ol class="contain" id="bol">
+                            <li>URDU</li>
+                            <li>ENGLISH</li>
+                        </ol>
+
+                    </div>
+
+                    <div class="personalinformation">
+                        <div class="skillT">
+                            <h3>SKILLS</h3><i class="ri-subtract-fill" id="menu"></i>
+                        </div>
+                        <ol id="sajjad">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>TYPESCRIPT</li>
+                        </ol>
+                    </div>
+
+
+                </div>
+
+
+                <div class="about-section">
+
+
+
+
+                    <div class="aboutme">
+                        <h1><i class="ri-graduation-cap-fill" id="icon"></i> EDUCATION</h1>
+                        <ul id="weT">
+                            <li>Intermediate in Engineering</li>
+                            <li>worker intermediate college for Boys.</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="aboutme">
+                        <h1> <i class="ri-user-fill" id="icon"></i> ABOUT ME</h1>
+
+                        <ul id="weT2">
+                            <li>Passionate Web Developer: I am a dedicated web developer with a strong foundation in
+                                front-end and back-end technologies. </li>
+                            <li>Experience Across Diverse Projects: Having worked on various projects ranging from
+                                simple
+                                websites to complex web applications, .</li>
+                            <li>Focused on Continuous Learning: I am always exploring new tools, frameworks, and best
+                                practices to stay updated with the latest trends in web development. </li>
+                        </ul>
+
+
+                    </div>
+
+                    <!-- <div class="aboutme">
+                <h1><i class="ri-graduation-cap-fill"></i> EDUCATION</h1>
+                <ul>
+                    <li>Intermediate in Engineering</li>
+                    <li>worker intermediate college</li>
+                
+                </ul>
+
+                 </div> -->
+
+                    <div class="aboutme">
+                        <h1><i class="ri-building-2-fill" id="icon"></i> WORK EXPEREIENCE</h1>
+                        <ul>
+                            <li id="companyNameT"> Developed and Maintained Web Applications: Built dynamic, responsive
+                                websites and web
+                                applications using HTML, CSS, JavaScript, and frameworks such as React and Angular.
+                            </li>
+                            <li id="PositionT"> Collaborated with Cross-Functional Teams: Worked closely with designers,
+                                product managers,
+                                and backend developers . </li>
+                            <li id="DurationT"> Performed Debugging and Optimization: Identified and resolved
+                                performance
+                                bottlenecks,
+                                optimized site. </li>
+
+                            <li id="JobT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magni
+                                aliquid
+                                accusa</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+           <div class="click">
+            <a href="#view"><button onclick="edit()" class="preview">Preview and Edit</button></a>
+            <button onclick="Printcv()" class="preview1">Print cv</button>
+           </div>
+
+    </div>
+
+
+
+    <script src="code.js"></script>
+</body>
+
+</html>

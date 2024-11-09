@@ -1,0 +1,481 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:rgb(155, 190, 197);
+}
+.header{
+    width: 100%;
+    height: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    background-color: rgb(66, 100, 122);
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    width: 95%;
+    height: auto;
+    background-color: rgba(135, 206, 240, 0.774);
+    display: flex;
+    justify-content: center;
+    
+}
+.child1{
+    width: 50%;
+
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.child2{
+    width: 50%;
+
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+.fill{
+    margin-top: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+.info{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 400;
+  
+}
+.field{
+    padding: 30px;
+    border: 2.5px solid black;
+}
+.educate{
+    width: 50%;
+    height: 50px;
+}
+
+.textarea{
+    width: 80%;
+    height: 70px;
+  
+}
+.marg{
+    margin-bottom: 15px;
+}
+
+.textarea1{
+    width: 80%;
+    height: 70px;
+  
+}
+#addbtn button{
+    padding: 15px;
+    border: 1px solid rgb(21, 60, 189);
+    border-radius: 2px;
+    background-color:rgb(21, 60, 189);
+    font-size: 15px;
+    color: white;
+    width: 70px;
+    
+}
+#addbtn{
+ 
+    width:0% ;
+}
+#addbtn2 button{
+    padding: 15px;
+    border: 1px solid rgb(21, 60, 189);
+    border-radius: 2px;
+    background-color:rgb(21, 60, 189);
+    font-size: 15px;
+    color: white;
+    /* width: 70px; */
+    
+}
+#addbtn2{
+ 
+    width:0% ;
+}
+
+.fillpic{
+    font-size: 15px;
+    font-weight: 300;
+   padding: 10px;
+    color: white;
+}
+.skill{
+    width: 50%;
+    height: 50px;
+
+}
+
+#addskill button{
+    padding: 16px;
+    border: 1px solid rgb(21, 60, 189);
+    border-radius: 2px;
+    background-color:rgb(21, 60, 189);
+    font-size: 15px;
+    color: white;
+    /* width: 70px; */
+    
+}
+#addskill{
+ 
+    width:0% ;
+}
+
+#addlang button{
+    padding: 16px;
+    border: 1px solid rgb(21, 60, 189);
+    border-radius: 2px;
+    background-color:rgb(21, 60, 189);
+    font-size: 15px;
+    color: white;
+}
+
+#addlang{
+    width:0% ;
+}
+
+.work{
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+
+}
+.work1{
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 90px;
+
+}
+.btn{
+    padding: 15px;
+    border: 1px solid chartreuse;
+    border-radius: 2px;
+    background-color: chartreuse;
+    color: black;
+    font-size: 15px;
+}
+.generete{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 158, 158);
+    padding: 50px;
+}
+
+@media  screen and (max-width:1250px) {
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .child1{
+        width: 90%;
+        padding: 0%;
+    }
+    .child2{
+        width: 90%;
+        padding: 0%;
+    }
+    .field{
+        margin-top: 40px;
+    }
+    .skill{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+
+    .fill{
+        width: 250px;
+    }
+    .skill{
+        width: 100%;
+    }
+    .educate{
+        width: 100%;
+    }
+    .textarea{
+        width: 100%;
+     
+    }
+    .textarea1{
+        width: 100%;
+     
+    }
+    .work{
+        width: 250px;
+    }
+    .work1{
+        width: 250px;
+    }
+}
+
+
+
+
+
+
+
+#namet{
+    color: white;
+}
+
+
+
+                                /* Resume template */
+
+/* .head1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head1 h1{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 40px;
+} */
+.mainT{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+.container1T{
+    width: 85%;
+    height: auto;
+    display: flex;
+    
+}
+.containerT{
+    width: 300px;
+    height: auto;
+    background-color: rgb(49, 62, 88);
+}
+.image{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(241, 239, 239);
+}
+.name h1{
+    text-align: center;
+    color: azure;
+    font-size: 40px;
+    font-family:initial;
+
+}
+
+.personalinformation{
+    width: 100%;
+    min-width: 160px;
+    height: auto;
+    margin-top: 40px;
+   
+    padding-left: 20px;
+}
+
+.personalinformation p {
+    margin-top: 10px;
+    color: aliceblue;
+}
+.personalinformation h3 {
+    color:white
+   
+}
+
+.about-section{
+    width: 100%;
+    height: auto;
+    background-color: rgb(229, 248, 248);
+}
+.aboutme{
+  
+  height: 330px;
+  
+}
+.aboutme h1{
+    padding-left: 40px;
+    padding-top: 50px;
+    color:rgb(49, 62, 88);
+}
+.aboutme ul {
+    padding-top: 15px;
+    margin-left: 60px;
+}
+.aboutme ul li{
+    padding-top: 15px;
+    font-size: 15px;
+}
+#icon{
+    border: 3px solid black;
+    border-radius: 50%;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+   
+}
+.skillT{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+
+ #menu{
+    color: white;
+    
+    padding-right: 15px;
+}
+.hidden {
+    display: none;
+}
+#lang{
+    color: white;
+    float: right;
+    padding-right:15px ;
+
+}
+.contain{
+    width: 100%;
+    height: 150px;
+
+    color: white;
+   
+    
+}
+.contain li{
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#sajjad li{
+    color: white;
+   padding: 5px;
+   margin-left: 5px;
+   margin-top: 5px;
+    
+}
+.hidden1{
+    display: block;
+}
+
+#temp{
+    display: none;
+}
+.click{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.preview{
+
+    width: 180px;
+    padding: 15px;
+    background-color: transparent;
+  
+    color: white;
+    font-size: 20px;
+    border-radius: 10px ;
+    transition: all 0.5s;
+}
+.preview:hover{
+    background-color: red;
+}
+
+
+
+.preview1{
+
+    width: 180px;
+    padding: 15px;
+  
+    background-color: rgb(4, 177, 4);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px ;
+    transition: all 0.5s;
+}
+.preview1:hover{
+
+    background-color: transparent;
+}
+
+@media screen and (max-width:750px) {
+    .mainT{
+        width: 100%;
+        height: auto;
+    }
+    .container1T{
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+    .containerT{
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+        
+    }
+    .aboutme{
+        height: auto;
+        padding-bottom: 80px;
+      
+    }
+    .aboutme ul {
+
+        margin-left: 50px;
+    }
+    .aboutme h1{
+        padding-left: 20px;
+        
+    }
+    .click{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:940px) {
+    .aboutme{
+        height: auto;
+    }
+    
+}

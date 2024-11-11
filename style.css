@@ -232,7 +232,8 @@ body{
         width: 250px;
     }
     .fillpic{
-        padding:0px
+        padding:0px;
+        width:100%;
     }
     
 }

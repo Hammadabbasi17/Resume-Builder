@@ -117,7 +117,7 @@ body{
 .fillpic{
     font-size: 15px;
     font-weight: 300;
-   padding: 10px;
+   padding: 5px;
     color: white;
 }
 .skill{
@@ -231,6 +231,10 @@ body{
     .work1{
         width: 250px;
     }
+    .fillpic{
+        padding:0px
+    }
+    
 }
 
 
